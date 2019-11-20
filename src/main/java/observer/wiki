@@ -1,0 +1,8 @@
+观察者模式
+subject  event   observer
+是同步的,事件发生时subject就会将event传播给observer进行处理
+
+
+发布订阅模式
+publisher  topic  subscriber
+异步的，publisher与subscriber之间并不知道对方，通过topic才有一定关联，相对于观察者模式更加解耦，并且它是异步的，例如各种消息中间件
