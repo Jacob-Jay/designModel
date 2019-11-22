@@ -1,0 +1,18 @@
+静态代理  与 装饰模式
+行为一致但是目的不一样
+静态代理：只是叫别人做一件事
+装饰模式：增强自己的功能
+
+
+
+jdk  动态代理其实就是生成一个代理字节码实现了给定的接口,实现了给定方法，将其委托给
+创建代理对象时时创建的InvocationHandler对象，使用反射完成处理
+ public final void sayHello(String var1) throws  {
+        try {
+            super.h.invoke(this, m3, new Object[]{var1});
+        } catch (RuntimeException | Error var3) {
+            throw var3;
+        } catch (Throwable var4) {
+            throw new UndeclaredThrowableException(var4);
+        }
+    }
